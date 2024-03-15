@@ -1,0 +1,151 @@
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+ 
+}
+
+main{
+    
+    font-family: "Truculenta", sans-serif;
+      
+}
+.popover{
+position: fixed;
+height:150px ;
+width: 100px;
+text-align: center;
+justify-self:center;
+z-index:999;
+justify-content:center;
+top: 0;
+left: 0%;
+margin-left: 80%;
+margin-top: 55vh;
+display:flex;
+border: none;
+flex-wrap: wrap;
+
+
+background-color:#ffffff00;
+
+}
+.popover>img{
+width: 85px;
+height:  100px;
+border-radius: 50%;
+transition: 0.3s;
+border:5px  solid ;
+animation:  border  2s linear infinite ;
+             
+
+}
+
+
+@keyframes border{
+    0% {
+border-color: #ccc;
+
+
+    }
+    25%{
+        border-color: #f7bf5e; 
+        
+    }
+    50%{
+        border-color:#605f60 ;
+    }
+    75%{
+        border-color: #fea204;
+    }
+    96%{
+        border-color:#707070
+    }
+    100%{
+        border-color: #ccc;;
+    }
+
+  }
+.popover:hover img{opacity: 0.65;}
+.menu{
+    position: absolute;
+    top: 0;
+    right: 90px;
+    width:200px ;
+    height: 140px;
+    padding: 8px;
+    translate: 8px;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 6px;
+    background:#ffffff00;
+    box-shadow: 0 12px 24px -10px rgba(0, 0, 0, 0);
+    transition: 0.3s;
+    font-weight: bold;
+    color:rgb(251, 188, 16);
+    font-size: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* overflow: hidden; */
+
+}
+.menu::after{
+    content:"";
+    position: absolute;
+    top: 18px;
+    right: 10px;
+    width: 100px;
+    rotate: 45deg;
+    background: inherit;
+}
+.popover:hover .menu{
+    opacity: 1;
+    visibility: visible;
+    translate:  0;
+}
+.menu>header{
+    display: flex;
+    align-items: center;
+    gap: 1px;
+    margin-bottom: 10px;
+    height: 100px;
+    text-align: center;
+    justify-self: center;
+
+}
+.menu>h2{
+    margin:0;
+    font-size: 8px;
+    margin-right: 10px;
+    text-align: center;
+    float: left;
+}
+.menu>h3{
+    margin: 0;
+    opacity: 0.5;
+    
+   
+    text-align: center;
+}
+
+.menu>header>a{
+    display: flex;
+    border-radius: 50%;
+    color:rgb(251, 188, 16);
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+   font-size: 25px;
+    transition: all 0.2s ease-in-out;
+    margin: 10px;
+}
+.menu>header>a:hover{
+    
+    transform: scale(1.1);
+    color: tomato;
+}
+
+
+
+
+
