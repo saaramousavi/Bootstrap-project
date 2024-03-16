@@ -26,5 +26,5 @@
 
 ![GitHub metrics](https://metrics.lecoq.io/saaramousavi)  
 
-![GitHub streak stats](https://streak-stats.demolab.com/?user=saaramousavi)  
+ 
 
